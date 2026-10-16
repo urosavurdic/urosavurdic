@@ -5,15 +5,15 @@ Applied Science Intern at Microsoft. I work on machine learning systems and the
 evaluation infrastructure around them — the part that tells you whether a model
 actually does what you claim it does.
 
-Most of what I build falls into three groups: interpretability and safety
-research on language models, retrieval and representation learning, and
-performance work close to the hardware.
+Most of what I build falls into four groups: LLM evaluation and the data
+behind it, post-training and model internals, retrieval and representation
+learning, and performance work across hardware and computing paradigms.
 
 ### Selected work
 
 | Project | What it is |
 |---|---|
-| **[DPO safety representations](https://github.com/urosavurdic/dpo-safety-representations)** | Does DPO build a new safety representation, or amplify one the base model already had? Probing and steering a refusal direction across a Base → SFT → DPO chain. |
+| **[DPO safety representations](https://github.com/urosavurdic/dpo-safety-representations)** | How post-training reshapes a model's internal representations: probing, ablating and transferring a refusal direction across a controlled Base → SFT → DPO chain. |
 | **[Attention mechanism paradigms](https://github.com/urosavurdic/attention-mechanism-paradigms)** | Attention on 12 execution substrates and 17 implementations, measured and modelled stage by stage. Softmax is 0.4% of the FLOPs and up to 35% of the measured runtime; a silent float64 promotion under NumPy 2 made FP32 look 20× slower. |
 | **[Optimization methods](https://github.com/urosavurdic/optimization-methods)** | Six optimisation problems from scratch in NumPy — metaheuristics, derivative-free fitting, and backpropagation raced against a genetic algorithm. |
 | **[Code search engine](https://github.com/urosavurdic/embeddings-based-code-search-engine)** | Semantic code search over CoSQA. A bi-encoder fine-tuned with InfoNCE lifts MRR@10 from 0.79 to 0.91. |
